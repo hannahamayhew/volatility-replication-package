@@ -1,0 +1,17 @@
+window,fred_group,is_nominal,n_series,n_OK,n_ambiguous,n_adf_only,n_nonstationary
+hist,Housing / Construction,0,10,0,0,5,5
+hist,Interest and Exchange Rates,1,21,15,6,0,0
+hist,Labor Market,0,31,25,4,0,2
+hist,Money and Credit,1,13,12,1,0,0
+hist,Orders and Inventories,0,7,5,2,0,0
+hist,Output and Income,0,16,13,3,0,0
+hist,Prices,1,20,20,0,0,0
+hist,Stock Market,1,4,2,1,0,1
+full,Housing / Construction,0,10,0,0,2,8
+full,Interest and Exchange Rates,1,21,15,6,0,0
+full,Labor Market,0,31,20,9,0,2
+full,Money and Credit,1,13,13,0,0,0
+full,Orders and Inventories,0,8,5,3,0,0
+full,Output and Income,0,16,5,11,0,0
+full,Prices,1,20,20,0,0,0
+full,Stock Market,1,4,3,0,1,0

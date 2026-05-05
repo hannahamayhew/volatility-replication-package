@@ -1,0 +1,85 @@
+break_group,measure,sector,window,n_target,n_total,n_abrupt,n_trans,pct_abrupt
+single,UV,Output and Income,1959:03-1999:12,9,16,6,9,66.66666666666666
+single,UV,Output and Income,1959:03-2007:12,8,16,5,8,62.5
+single,UV,Output and Income,1959:03-2026:01,4,16,2,4,50.0
+single,UV,Labor Market,1959:03-1999:12,14,31,14,14,100.0
+single,UV,Labor Market,1959:03-2007:12,13,31,12,13,92.3076923076923
+single,UV,Labor Market,1959:03-2026:01,10,31,8,10,80.0
+single,UV,Orders and Inventories,1959:03-1999:12,4,7,4,4,100.0
+single,UV,Orders and Inventories,1959:03-2007:12,4,8,4,4,100.0
+single,UV,Orders and Inventories,1959:03-2026:01,0,8,0,0,
+single,UV,Housing / Construction,1959:03-1999:12,0,10,0,0,
+single,UV,Housing / Construction,1959:03-2007:12,2,10,2,2,100.0
+single,UV,Housing / Construction,1959:03-2026:01,0,10,0,0,
+single,UV,Prices,1959:03-1999:12,9,20,7,9,77.77777777777779
+single,UV,Prices,1959:03-2007:12,7,20,7,7,100.0
+single,UV,Prices,1959:03-2026:01,4,20,4,4,100.0
+single,UV,Money and Credit,1959:03-1999:12,3,13,2,3,66.66666666666666
+single,UV,Money and Credit,1959:03-2007:12,2,13,1,2,50.0
+single,UV,Money and Credit,1959:03-2026:01,2,13,2,2,100.0
+single,UV,Interest and Exchange Rates,1959:03-1999:12,2,21,2,2,100.0
+single,UV,Interest and Exchange Rates,1959:03-2007:12,0,21,0,0,
+single,UV,Interest and Exchange Rates,1959:03-2026:01,2,21,2,2,100.0
+single,CV,Output and Income,1959:03-1999:12,7,16,7,7,100.0
+single,CV,Output and Income,1959:03-2007:12,9,16,8,9,88.88888888888889
+single,CV,Output and Income,1959:03-2026:01,1,16,1,1,100.0
+single,CV,Labor Market,1959:03-1999:12,20,31,15,20,75.0
+single,CV,Labor Market,1959:03-2007:12,15,31,11,15,73.33333333333333
+single,CV,Labor Market,1959:03-2026:01,8,31,7,8,87.5
+single,CV,Orders and Inventories,1959:03-1999:12,5,7,4,5,80.0
+single,CV,Orders and Inventories,1959:03-2007:12,3,8,2,3,66.66666666666666
+single,CV,Orders and Inventories,1959:03-2026:01,2,8,1,2,50.0
+single,CV,Housing / Construction,1959:03-1999:12,6,10,6,6,100.0
+single,CV,Housing / Construction,1959:03-2007:12,4,10,4,4,100.0
+single,CV,Housing / Construction,1959:03-2026:01,2,10,2,2,100.0
+single,CV,Prices,1959:03-1999:12,4,20,3,4,75.0
+single,CV,Prices,1959:03-2007:12,3,20,3,3,100.0
+single,CV,Prices,1959:03-2026:01,4,20,4,4,100.0
+single,CV,Money and Credit,1959:03-1999:12,4,13,4,4,100.0
+single,CV,Money and Credit,1959:03-2007:12,3,13,3,3,100.0
+single,CV,Money and Credit,1959:03-2026:01,3,13,3,3,100.0
+single,CV,Interest and Exchange Rates,1959:03-1999:12,2,21,2,2,100.0
+single,CV,Interest and Exchange Rates,1959:03-2007:12,0,21,0,0,
+single,CV,Interest and Exchange Rates,1959:03-2026:01,1,21,1,1,100.0
+multi,UV,Output and Income,1959:03-1999:12,3,16,7,7,100.0
+multi,UV,Output and Income,1959:03-2007:12,4,16,11,11,100.0
+multi,UV,Output and Income,1959:03-2026:01,1,16,1,2,50.0
+multi,UV,Labor Market,1959:03-1999:12,15,31,39,43,90.69767441860465
+multi,UV,Labor Market,1959:03-2007:12,14,31,41,45,91.11111111111111
+multi,UV,Labor Market,1959:03-2026:01,4,31,15,16,93.75
+multi,UV,Orders and Inventories,1959:03-1999:12,2,7,5,5,100.0
+multi,UV,Orders and Inventories,1959:03-2007:12,3,8,9,9,100.0
+multi,UV,Orders and Inventories,1959:03-2026:01,4,8,15,17,88.23529411764706
+multi,UV,Housing / Construction,1959:03-1999:12,8,10,31,32,96.875
+multi,UV,Housing / Construction,1959:03-2007:12,6,10,26,28,92.85714285714286
+multi,UV,Housing / Construction,1959:03-2026:01,9,10,62,71,87.32394366197182
+multi,UV,Prices,1959:03-1999:12,7,20,21,21,100.0
+multi,UV,Prices,1959:03-2007:12,11,20,27,27,100.0
+multi,UV,Prices,1959:03-2026:01,13,20,39,41,95.1219512195122
+multi,UV,Money and Credit,1959:03-1999:12,6,13,16,17,94.11764705882352
+multi,UV,Money and Credit,1959:03-2007:12,8,13,17,19,89.47368421052632
+multi,UV,Money and Credit,1959:03-2026:01,6,13,19,21,90.47619047619048
+multi,UV,Interest and Exchange Rates,1959:03-1999:12,19,21,83,89,93.25842696629213
+multi,UV,Interest and Exchange Rates,1959:03-2007:12,21,21,104,111,93.69369369369369
+multi,UV,Interest and Exchange Rates,1959:03-2026:01,19,21,118,129,91.47286821705426
+multi,CV,Output and Income,1959:03-1999:12,4,16,9,9,100.0
+multi,CV,Output and Income,1959:03-2007:12,4,16,10,10,100.0
+multi,CV,Output and Income,1959:03-2026:01,4,16,12,13,92.3076923076923
+multi,CV,Labor Market,1959:03-1999:12,10,31,18,22,81.81818181818183
+multi,CV,Labor Market,1959:03-2007:12,13,31,27,30,90.0
+multi,CV,Labor Market,1959:03-2026:01,6,31,20,22,90.9090909090909
+multi,CV,Orders and Inventories,1959:03-1999:12,0,7,0,0,
+multi,CV,Orders and Inventories,1959:03-2007:12,2,8,4,4,100.0
+multi,CV,Orders and Inventories,1959:03-2026:01,1,8,4,4,100.0
+multi,CV,Housing / Construction,1959:03-1999:12,3,10,6,7,85.71428571428571
+multi,CV,Housing / Construction,1959:03-2007:12,5,10,11,12,91.66666666666666
+multi,CV,Housing / Construction,1959:03-2026:01,5,10,11,12,91.66666666666666
+multi,CV,Prices,1959:03-1999:12,13,20,31,36,86.11111111111111
+multi,CV,Prices,1959:03-2007:12,14,20,30,39,76.92307692307693
+multi,CV,Prices,1959:03-2026:01,13,20,38,38,100.0
+multi,CV,Money and Credit,1959:03-1999:12,5,13,12,13,92.3076923076923
+multi,CV,Money and Credit,1959:03-2007:12,6,13,15,16,93.75
+multi,CV,Money and Credit,1959:03-2026:01,7,13,24,26,92.3076923076923
+multi,CV,Interest and Exchange Rates,1959:03-1999:12,19,21,97,100,97.0
+multi,CV,Interest and Exchange Rates,1959:03-2007:12,21,21,100,104,96.15384615384616
+multi,CV,Interest and Exchange Rates,1959:03-2026:01,20,21,111,117,94.87179487179486

@@ -1,0 +1,26 @@
+# MATLAB intermediate data (large binary .mat files; reproduced by running master_run.m)
+data_intermediate/
+*.mat
+
+# MATLAB autosave and temp files
+*.asv
+*.m~
+*.mex*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Old/duplicate figure files (superseded by current named versions)
+output/figures/*_break_magnitude.*
+output/figures/figure1_break_date_distribution.*
+output/figures/figure2_median_breaks_by_sector.*
+output/figures/figure3_share_moderating_amplifying.*
+output/figures/figure4a_break_magnitude_uv_real_nominal.*
+output/figures/figure4b_break_magnitude_cv_real_nominal.*
+output/figures/figureA*_break_magnitude.*
+output/figures/figureA7_interest_fx_break_magnitude.*
+
+# Scratch/temp scripts created during development
+*.tmp.docx
