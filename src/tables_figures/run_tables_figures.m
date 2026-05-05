@@ -358,6 +358,8 @@ if ~ismember('fred_group', series_meta.Properties.VariableNames)
     return;
 end
 
-run(fullfile(fileparts(PKG_ROOT), 'tables_figures_sensier_fredmd.m'));
+% tables_figures_sensier_fredmd.m is not included in this replication package.
+% All paper figures are produced by produce_paper_figures.m (Stage 4b).
+% run(fullfile(fileparts(PKG_ROOT), 'tables_figures_sensier_fredmd.m'));
 
 fprintf('\n[run_tables_figures] Done.\n');
