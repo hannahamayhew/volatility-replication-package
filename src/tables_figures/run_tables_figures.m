@@ -126,69 +126,7 @@ fprintf('[run_tables_figures] Merged table: %d rows x %d columns\n', ...
     height(series_meta), width(series_meta));
 
 %% -----------------------------------------------------------------------
-% 2b. JOIN EXPANSIONS-ONLY CV RESULTS (Stages 3c, 3f, 3i)
-%% -----------------------------------------------------------------------
-cvexp_path = fullfile(DATA_INT,'cv_expansions_results.mat');
-if exist(cvexp_path,'file')
-    load(cvexp_path, 'series_meta_cvexp');
-    vars_cvexp = setdiff(series_meta_cvexp.Properties.VariableNames, ...
-                         {'series_name','include_main_hist'});
-    for k = 1:numel(vars_cvexp)
-        series_meta.(vars_cvexp{k}) = series_meta_cvexp.(vars_cvexp{k});
-    end
-    fprintf('[run_tables_figures] Loaded cv_expansions_results.mat (%d fields)\n', ...
-        numel(vars_cvexp));
-else
-    fprintf('[run_tables_figures] cv_expansions_results.mat not found — skipping.\n');
-end
-
-cvexp2007_path = fullfile(DATA_INT,'cv_expansions_2007_results.mat');
-if exist(cvexp2007_path,'file')
-    load(cvexp2007_path, 'series_meta_cvexp2007');
-    vars_cvexp2007 = setdiff(series_meta_cvexp2007.Properties.VariableNames, ...
-                             {'series_name','include_main_2007'});
-    for k = 1:numel(vars_cvexp2007)
-        series_meta.(vars_cvexp2007{k}) = series_meta_cvexp2007.(vars_cvexp2007{k});
-    end
-    fprintf('[run_tables_figures] Loaded cv_expansions_2007_results.mat (%d fields)\n', ...
-        numel(vars_cvexp2007));
-else
-    fprintf('[run_tables_figures] cv_expansions_2007_results.mat not found — skipping.\n');
-end
-
-cvexpfull_path = fullfile(DATA_INT,'cv_expansions_full_results.mat');
-if exist(cvexpfull_path,'file')
-    load(cvexpfull_path, 'series_meta_cvexpfull');
-    vars_cvexpfull = setdiff(series_meta_cvexpfull.Properties.VariableNames, ...
-                             {'series_name','include_main_full_ext'});
-    for k = 1:numel(vars_cvexpfull)
-        series_meta.(vars_cvexpfull{k}) = series_meta_cvexpfull.(vars_cvexpfull{k});
-    end
-    fprintf('[run_tables_figures] Loaded cv_expansions_full_results.mat (%d fields)\n', ...
-        numel(vars_cvexpfull));
-else
-    fprintf('[run_tables_figures] cv_expansions_full_results.mat not found — skipping.\n');
-end
-
-%% -----------------------------------------------------------------------
-% 2c. JOIN MULTIPLE-BREAK RESULTS (if Stage 3d has run)
-%% -----------------------------------------------------------------------
-mb_path = fullfile(DATA_INT,'mb_hist_results.mat');
-if exist(mb_path,'file')
-    load(mb_path, 'series_meta_mb_hist');
-    vars_mb = setdiff(series_meta_mb_hist.Properties.VariableNames, ...
-                      {'series_name','include_main_hist','include_main_2007','include_main_full_ext'});
-    for k = 1:numel(vars_mb)
-        series_meta.(vars_mb{k}) = series_meta_mb_hist.(vars_mb{k});
-    end
-    fprintf('[run_tables_figures] Loaded mb_hist_results.mat (%d fields)\n', ...
-        numel(vars_mb));
-else
-    fprintf('[run_tables_figures] mb_hist_results.mat not found — skipping.\n');
-end
-
-%% -----------------------------------------------------------------------
-% 2d. JOIN SMOOTH-BREAK RESULTS (Stages 3k, 3l)
+% 2b. JOIN SMOOTH-BREAK RESULTS (Stages 3k, 3l)
 %% -----------------------------------------------------------------------
 smooth_files = { ...
     'uv_smooth_hist_results.mat',  'series_meta_uv_smooth_hist',  'include_main_hist'; ...

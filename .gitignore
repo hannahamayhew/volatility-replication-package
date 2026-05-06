@@ -23,5 +23,8 @@ output/figures/figure4b_break_magnitude_cv_real_nominal.*
 output/figures/figureA*_break_magnitude.*
 output/figures/figureA7_interest_fx_break_magnitude.*
 
+# Runtime log files (reproduced by master_run.m with diary)
+output/logs/
+
 # Scratch/temp scripts created during development
 *.tmp.docx
