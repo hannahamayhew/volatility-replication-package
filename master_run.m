@@ -35,10 +35,9 @@
 %       master_run
 %
 % REQUIREMENTS
-%   - 2026-02-MD.csv must be in the parent fred-database_code/ directory
-%     (config.m points CSV_IN there automatically — no copy needed)
-%   - All helper functions in parent directory (fred-database_code/)
-%     must be on the MATLAB path (config.m adds them automatically)
+%   - 2026-02-MD.csv must be in data_raw/ (included)
+%   - series_metadata_original_order.csv must be in data_raw/ (included)
+%   - All helper functions are in helpers/ (config.m adds them to path)
 %   - No additional toolboxes required
 % =========================================================================
 
@@ -171,8 +170,6 @@ run(fullfile(SRC_FIGS, 'produce_paper_figures.m'));
 %% ------------------------------------------------------------------
 % Done
 %% ------------------------------------------------------------------
-% tables_figures_sensier_fredmd.m opens with 'clear' which wipes workspace
-% variables including t_start and OUT_* paths.  Restore config before printing.
 run('config.m');
 fprintf('\n==========================================================\n');
 try
@@ -180,7 +177,6 @@ try
 catch
     fprintf('  Replication complete.\n');
 end
-fprintf('  Per-stage CSVs     → %s\n', OUT_TABLES);
-fprintf('  Presentation layer → tables_figures_output/ (in fred-database_code/)\n');
-fprintf('  Logs               → %s\n', OUT_LOGS);
+fprintf('  Output tables → %s\n', OUT_TABLES);
+fprintf('  Figures       → %s\n', OUT_FIGS);
 fprintf('==========================================================\n');
