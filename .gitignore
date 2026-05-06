@@ -6,6 +6,7 @@ data_intermediate/
 *.asv
 *.m~
 *.mex*
+*.fig
 
 # OS files
 .DS_Store

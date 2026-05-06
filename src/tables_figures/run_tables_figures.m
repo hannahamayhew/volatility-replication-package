@@ -311,36 +311,6 @@ end
 %% -----------------------------------------------------------------------
 save(fullfile(DATA_INT,'series_meta.mat'), 'series_meta');
 
-% tables_figures_sensier_fredmd.m loads series_meta.mat from fred-database_code/
-% (its own pwd).  We need to update that file with the new columns derived here
-% (direction, cvexp) while preserving any rich columns already there from
-% prior full runs (smooth-break, multiple-break, etc.).
-smeta_legacy_path = fullfile(fileparts(PKG_ROOT), 'series_meta.mat');
-pkg_sm = series_meta;
-
-if exist(smeta_legacy_path,'file')
-    try
-        tmp = load(smeta_legacy_path, 'series_meta');
-        sm = tmp.series_meta;
-        if height(sm) == height(pkg_sm) && ...
-                isequal(string(sm.series_name), string(pkg_sm.series_name))
-            pkg_cols = pkg_sm.Properties.VariableNames;
-            for kk = 1:numel(pkg_cols)
-                sm.(pkg_cols{kk}) = pkg_sm.(pkg_cols{kk});
-            end
-        else
-            sm = pkg_sm;
-        end
-    catch
-        sm = pkg_sm;
-    end
-else
-    sm = pkg_sm;
-end
-
-series_meta = sm;
-save(smeta_legacy_path, 'series_meta');
-
 fprintf('[run_tables_figures] Saved series_meta.mat\n');
 
 %% -----------------------------------------------------------------------
@@ -352,7 +322,7 @@ fprintf('[run_tables_figures] Saved series_meta.mat\n');
 % Guard: if the column is absent (file was missing during data prep), skip gracefully.
 if ~ismember('fred_group', series_meta.Properties.VariableNames)
     warning('[run_tables_figures] series_meta.fred_group not found — Stage 4 presentation skipped.');
-    fprintf('[run_tables_figures] Ensure series_metadata_original_order.csv is in the fred-database_code/ directory\n');
+    fprintf('[run_tables_figures] Ensure series_metadata_original_order.csv is in the data_raw/ directory\n');
     fprintf('[run_tables_figures] and re-run master_run from Stage 1, or re-run run_data_prep.m alone then this script.\n');
     return;
 end
