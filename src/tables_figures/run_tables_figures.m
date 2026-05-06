@@ -344,9 +344,8 @@ save(smeta_legacy_path, 'series_meta');
 fprintf('[run_tables_figures] Saved series_meta.mat\n');
 
 %% -----------------------------------------------------------------------
-% 4. CALL THE PRESENTATION LAYER
+% 4. DONE — series_meta.mat saved above; figures produced by produce_paper_figures.m
 %% -----------------------------------------------------------------------
-fprintf('[run_tables_figures] Calling tables_figures_sensier_fredmd.m...\n\n');
 
 % tables_figures_sensier_fredmd.m requires series_meta.fred_group.
 % fred_group is loaded by run_data_prep.m from series_metadata_original_order.csv.
